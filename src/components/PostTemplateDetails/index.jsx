@@ -6,7 +6,7 @@ import './style.scss';
 
 class PostTemplateDetails extends React.Component {
   render() {
-    const { subtitle, author } = this.props.data.site.siteMetadata;
+    const { title, author } = this.props.data.site.siteMetadata;
     const post = this.props.data.markdownRemark;
     const tags = post.fields.tagSlugs;
 
@@ -51,10 +51,10 @@ class PostTemplateDetails extends React.Component {
             {tagsBlock}
             <hr />
             <p className="post-single__footer-text">
-              {subtitle}
-              <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer">
-                <br /> <strong>{author.name}</strong> on Twitter
-              </a>
+              <h4 style={{ textAlign: 'center', fontStyle: 'italic', fontFamily: 'Gentium Book Basic' }}>{title}</h4>
+              {/*<a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer">*/}
+                {/*<br /> <strong>{author.name}</strong> on Twitter*/}
+              {/*</a>*/}
             </p>
             {commentsBlock}
           </div>

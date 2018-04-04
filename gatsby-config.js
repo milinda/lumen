@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    url: 'https://milinda.pathirage.org',
+    title: 'Dispersed by Milinda Pathirage',
+    subtitle: 'A software engineer, a DIYer and a mechanical keyboard enthusiast.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -11,20 +11,24 @@ module.exports = {
         path: '/'
       },
       {
+        label: 'Projects',
+        path: '/contact/'
+      },
+      {
         label: 'About me',
         path: '/about/'
       },
       {
-        label: 'Contact me',
-        path: '/contact/'
+        label: 'Photos',
+        path: '/photos/'
       }
     ],
     author: {
-      name: 'John Doe',
+      name: 'Milinda Pathirage',
       email: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'milinda',
       rss: '#',
       vk: '#'
     }
@@ -122,7 +126,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto\:400,400i,500,700`]
+        fonts: [
+          `roboto\:400,400i,500,700`,
+          `Julius Sans One`,
+          `Crimson Text\:400,400i,700,700i`,
+          `Libre Baskerville\:400,400i,700`,
+          `Gentium Book Basic\:400,400i,700,700i`
+        ]
       }
     },
     {
